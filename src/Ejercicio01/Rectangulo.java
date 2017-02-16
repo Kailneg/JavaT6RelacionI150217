@@ -2,8 +2,8 @@ package ejercicio01;
 
 public class Rectangulo {
 
-	private int base;
-	private int altura;
+	private float base;
+	private float altura;
 	
 	public Rectangulo(int base, int altura) {
 		
@@ -11,11 +11,11 @@ public class Rectangulo {
 		this.altura = altura;
 	}
 	
-	public int CalcularArea(){
+	public float CalcularArea(){
 		return base*altura;
 	}
 	
-	public int CalcularPerimetro(){
+	public float CalcularPerimetro(){
 		return base+base+altura+altura;
 	}
 }
