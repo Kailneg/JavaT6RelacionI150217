@@ -6,6 +6,8 @@ public class Libro {
 	private String autor;
 	private int nPaginas;
 	private int calificacion;
+	public static final int CALIFICACION_MAX = 10;
+	public static final int CALIFICACION_MIN = 0;
 	
 	public Libro(String titulo, String autor, int nPaginas, int calificacion) {
 		this.titulo = titulo;
@@ -35,7 +37,8 @@ public class Libro {
 	}
 
 	public void setCalificacion(int calificacion) {
-		this.calificacion = calificacion;
+		if(calificacion >= 0 && calificacion <= 10)
+			this.calificacion = calificacion;
 	}
 
 	@Override
