@@ -18,7 +18,7 @@ public class TestLibros {
 		
 		cl.añadirLibro(l3);
 		
-		cl.toString();
+		System.out.println(cl.toString());
 	}
 
 }
