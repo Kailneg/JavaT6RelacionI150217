@@ -18,13 +18,13 @@ public class ConjuntoLibros {
 	}
 	
 	public void añadirLibro(Libro libroAñadir){
-		if (librosCreados() < numLibrosMax)
-			for (Libro libro : libros) {
-				if(libro == null){
-					libro = libroAñadir;
-					break;
-				}
-			}
+//		if (librosCreados() < numLibrosMax)
+//			for (Libro libro : libros) {
+//				if(libro == null){
+//					libro = libroAñadir;
+//					break;
+//				}
+//			}
 		if (librosCreados() < numLibrosMax)
 			libros[librosCreados()] = libroAñadir;
 		else
